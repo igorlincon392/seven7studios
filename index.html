@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Seven7Studios — fotografia, filmes de casamento, cobertura de eventos e vídeos comerciais.">
+
+  <title>Seven7Studios | Produção Audiovisual</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header" id="topo">
+    <a href="#inicio" class="logo" aria-label="Seven7Studios - Início">
+      SEVEN<span>7</span>STUDIOS
+      <small>PRODUÇÃO AUDIOVISUAL</small>
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">A produtora</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato" class="nav-cta">Vamos conversar ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- CAPA -->
+    <section class="hero" id="inicio">
+      <img
+        class="hero-image"
+        src="./images/WhatsApp%20Image%202026-09-08%20at%2016.16.55.jpeg"
+        alt="Registro fotográfico de casamento"
+        fetchpriority="high"
+      >
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> PRODUÇÃO AUDIOVISUAL · BRASIL</p>
+
+        <h1>
+          Criamos histórias
+          <span>que merecem</span>
+          <span class="outline-text">ser vistas.</span>
+        </h1>
+
+        <p class="hero-description">
+          Transformamos momentos, ideias e marcas em experiências
+          audiovisuais que despertam emoções e deixam sua marca.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#portfolio" class="button button-light">Explorar projetos <span>↗</span></a>
+          <a href="#contato" class="button button-outline">Iniciar um projeto</a>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>FILMES · FOTOGRAFIA · EVENTOS</span>
+        <a href="#sobre">DESCUBRA A SEVEN <span>↓</span></a>
+        <span class="hero-index">01 / 04</span>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="section-label">
+        <span>01</span>
+        <span>QUEM SOMOS</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-heading">
+          <p class="eyebrow">IMAGENS COM PROPÓSITO</p>
+          <h2>Mais do que imagens. <span>Histórias com identidade.</span></h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            Na Seven7Studios, cada projeto é uma oportunidade de transformar
+            uma ideia em algo que as pessoas possam sentir, lembrar e compartilhar.
+          </p>
+          <p>
+            Trabalhamos com fotografia e produção audiovisual para casamentos,
+            eventos e marcas, unindo criatividade, direção e edição para contar
+            cada história do seu jeito.
+          </p>
+          <a href="#servicos" class="text-link">Conheça nossos serviços <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="about-banner">
+        <img
+          src="./images/IMG_7176.jpg"
+          alt="Registro fotográfico da Seven7Studios"
+          loading="lazy"
+        >
+        <div class="banner-caption">
+          <span>VISÃO CRIATIVA. EXECUÇÃO PRECISA.</span>
+          <span>SEVEN7STUDIOS®</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section class="section portfolio" id="portfolio">
+      <div class="section-label">
+        <span>02</span>
+        <span>TRABALHOS SELECIONADOS</span>
+      </div>
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">NOSSO UNIVERSO</p>
+          <h2>Projetos em <span>movimento.</span></h2>
+        </div>
+        <p>Cada projeto tem uma história. Estas são algumas das formas de contar a sua.</p>
+      </div>
+
+      <!-- ABAS -->
+      <div class="portfolio-tabs" role="group" aria-label="Tipo de portfólio">
+        <button class="portfolio-tab active" type="button" data-tab="fotografias" aria-pressed="true">
+          Fotografias
+        </button>
+        <button class="portfolio-tab" type="button" data-tab="videos" aria-pressed="false">
+          Vídeos
+        </button>
+      </div>
+
+      <!-- FILTROS DE FOTOGRAFIA -->
+      <div class="filters" role="group" aria-label="Filtrar fotografias" data-filters>
+        <button class="filter active" type="button" data-filter="todos">Todas</button>
+        <button class="filter" type="button" data-filter="casamentos">Casamentos</button>
+        <button class="filter" type="button" data-filter="eventos">Eventos</button>
+      </div>
+
+      <!-- FOTOGRAFIAS -->
+      <div class="project-grid portfolio-content" data-content="fotografias">
+
+        <article class="project-card project-large" data-category="casamentos">
+          <a href="./images/WhatsApp%20Image%202026-09-08%20at%2016.16.55.jpeg" class="project-image" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/WhatsApp%20Image%202026-09-08%20at%2016.16.55.jpeg"
+              alt="Fotografia de casamento"
+              loading="lazy"
+            >
+            <span class="project-arrow">↗</span>
+          </a>
+          <div class="project-info">
+            <div>
+              <span class="project-category">CASAMENTOS</span>
+              <h3>Histórias para a vida inteira</h3>
+            </div>
+            <span class="project-number">01</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="casamentos">
+          <a href="./images/WhatsApp%20Image%202026-09-08%20at%2016.16.55%20(2).jpeg" class="project-image" target="_blank" rel="noopener noreferrer">
+            <img
+              src="C:\Users\DELL\Desktop\SEVEN7\images\WhatsApp Image 2026-09-08 at 16.16.54.jpeg"
+              alt="Outro registro de casamento"
+              loading="lazy"
+            >
+            <span class="project-arrow">↗</span>
+          </a>
+          <div class="project-info">
+            <div>
+              <span class="project-category">CASAMENTOS</span>
+              <h3>Detalhes que ficam</h3>
+            </div>
+            <span class="project-number">02</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="casamentos">
+          <a href="./images/IMG_7176.jpg" class="project-image" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/IMG_7176.jpg"
+              alt="Fotografia de casamento"
+              loading="lazy"
+            >
+            <span class="project-arrow">↗</span>
+          </a>
+          <div class="project-info">
+            <div>
+              <span class="project-category">CASAMENTOS</span>
+              <h3>Momentos únicos</h3>
+            </div>
+            <span class="project-number">03</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="eventos">
+          <a href="./images/IMG_0918%20(2)%20(1).jpg" class="project-image" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./images/IMG_0918%20(2)%20(1).jpg"
+              alt="Fotografia de evento"
+              loading="lazy"
+            >
+            <span class="project-arrow">↗</span>
+          </a>
+          <div class="project-info">
+            <div>
+              <span class="project-category">EVENTOS</span>
+              <h3>Energia em cada frame</h3>
+            </div>
+            <span class="project-number">04</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- VÍDEOS -->
+      <div class="video-grid portfolio-content" data-content="videos" hidden>
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls playsinline preload="metadata">
+              <source
+                src="./images/WhatsApp%20Video%202026-09-08%20at%2016.54.53%20(1).mp4"
+                type="video/mp4"
+              >
+              Seu navegador não consegue reproduzir este vídeo.
+            </video>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-category">PRODUÇÃO AUDIOVISUAL</span>
+              <h3>Histórias em movimento</h3>
+            </div>
+            <span class="project-number">01</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="portfolio-note">
+        Cada imagem e vídeo representa um pouco do nosso olhar criativo.
+      </p>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <div class="section-label">
+        <span>03</span>
+        <span>O QUE FAZEMOS</span>
+      </div>
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">IDEIAS QUE GANHAM VIDA</p>
+          <h2>Da ideia à <span>tela.</span></h2>
+        </div>
+        <p>Soluções criativas pensadas para cada momento, público e objetivo.</p>
+      </div>
+
+      <div class="service-list">
+        <a href="#contato" class="service-item">
+          <span class="service-number">01</span>
+          <div class="service-main">
+            <h3>Fotografia e filmes de casamento</h3>
+            <p>Emoção, detalhes e momentos que merecem ser revividos.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </a>
+
+        <a href="#contato" class="service-item">
+          <span class="service-number">02</span>
+          <div class="service-main">
+            <h3>Cobertura de eventos</h3>
+            <p>Registros de experiências, celebrações e encontros.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </a>
+
+        <a href="#contato" class="service-item">
+          <span class="service-number">03</span>
+          <div class="service-main">
+            <h3>Vídeos comerciais</h3>
+            <p>Conteúdo audiovisual para apresentar marcas, produtos e serviços.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </a>
+
+        <a href="#contato" class="service-item">
+          <span class="service-number">04</span>
+          <div class="service-main">
+            <h3>Produção para redes sociais</h3>
+            <p>Vídeos planejados para comunicar e valorizar seu conteúdo.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CHAMADA -->
+    <section class="manifesto">
+      <div class="manifesto-image"></div>
+      <div class="manifesto-overlay"></div>
+      <div class="manifesto-content">
+        <p class="eyebrow">SUA HISTÓRIA É O PRÓXIMO PROJETO</p>
+        <h2>Vamos criar algo <span>extraordinário?</span></h2>
+        <a href="#contato" class="button button-light">Conte sua ideia <span>↗</span></a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <div class="section-label">
+        <span>04</span>
+        <span>FALE COM A GENTE</span>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <p class="eyebrow">VAMOS TIRAR SUA IDEIA DO PAPEL</p>
+          <h2>Todo grande projeto começa com uma <span>conversa.</span></h2>
+          <p class="contact-description">
+            Conte um pouco sobre o seu projeto e vamos conversar sobre como
+            transformar sua ideia em realidade.
+          </p>
+          <a
+            class="button button-light"
+            href="https://wa.me/5511939505901?text=Ol%C3%A1!%20Conheci%20a%20Seven7Studios%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20voc%C3%AAs."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Conversar pelo WhatsApp <span>↗</span>
+          </a>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-row">
+            <span>CONTATO</span>
+            <a href="https://wa.me/5511939505901" target="_blank" rel="noopener noreferrer">
+              (11) 93950-5901 ↗
+            </a>
+          </div>
+          <div class="contact-row">
+            <span>INSTAGRAM</span>
+            <a href="https://www.instagram.com/seven7studios_/" target="_blank" rel="noopener noreferrer">
+              Conheça nosso perfil ↗
+            </a>
+          </div>
+          <div class="contact-row">
+            <span>PROJETOS</span>
+            <p>Fotografia · Casamentos · Eventos · Vídeos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="logo footer-logo">
+      SEVEN<span>7</span>STUDIOS
+      <small>PRODUÇÃO AUDIOVISUAL</small>
+    </a>
+
+    <p>Histórias em movimento. Ideias que ficam.</p>
+    <a href="#topo" class="back-top">VOLTAR AO TOPO ↑</a>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Seven7Studios. Todos os direitos reservados.</span>
+      <span>CRIATIVIDADE EM CADA FRAME.</span>
+    </div>
+  </footer>
+</body>
+</html>
