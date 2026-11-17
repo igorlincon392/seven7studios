@@ -1,1 +1,42 @@
-const menuButton=document.querySelector('.menu-toggle');const nav=document.querySelector('.nav');menuButton?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));const symbol=menuButton.querySelector('span');if(symbol)symbol.textContent=open?'−':'＋'});nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');const symbol=menuButton?.querySelector('span');if(symbol)symbol.textContent='＋'}));const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();document.getElementById('print-cv')?.addEventListener('click',()=>window.print());
+(() => {
+  const menuButton = document.querySelector(".menu-toggle");
+  const navigation = document.querySelector("#navegacao");
+
+  const closeMenu = () => {
+    if (!menuButton || !navigation) return;
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Abrir menu");
+    navigation.classList.remove("open");
+  };
+
+  if (menuButton && navigation) {
+    menuButton.addEventListener("click", () => {
+      const willOpen = menuButton.getAttribute("aria-expanded") !== "true";
+      menuButton.setAttribute("aria-expanded", String(willOpen));
+      menuButton.setAttribute("aria-label", willOpen ? "Fechar menu" : "Abrir menu");
+      navigation.classList.toggle("open", willOpen);
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeMenu();
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 640) closeMenu();
+    });
+  }
+
+  const currentYear = new Date().getFullYear();
+  const year = document.querySelector("#year");
+  const yearTop = document.querySelector("#year-top");
+  if (year) year.textContent = String(currentYear);
+  if (yearTop) yearTop.textContent = String(currentYear);
+
+  document.querySelector("#print-page")?.addEventListener("click", () => {
+    window.print();
+  });
+})();
