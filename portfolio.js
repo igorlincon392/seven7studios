@@ -1,4 +1,5 @@
 (() => {
+  document.documentElement.classList.replace("no-js", "js");
   const menuButton = document.querySelector(".menu-toggle");
   const navigation = document.querySelector("#navegacao");
 
