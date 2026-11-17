@@ -1,382 +1,52 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101010">
-  <meta name="description" content="Seven7Studios — fotografia, filmes de casamento, cobertura de eventos e vídeos comerciais.">
-
-  <title>Seven7Studios | Produção Audiovisual</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Seven7Studios — portfólio de desenvolvimento web, sistemas digitais e experiências sob medida.">
+<meta property="og:title" content="Seven7Studios | Desenvolvimento digital">
+<meta property="og:description" content="Projetos digitais que transformam necessidades reais em experiências funcionais.">
+<title>Seven7Studios | Desenvolvimento digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./portfolio.css"><script src="./portfolio.js" defer></script>
 </head>
-
 <body>
-  <header class="header" id="topo">
-    <a href="#inicio" class="logo" aria-label="Seven7Studios - Início">
-      SEVEN<span>7</span>STUDIOS
-      <small>PRODUÇÃO AUDIOVISUAL</small>
-    </a>
-
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="nav" aria-label="Navegação principal">
-      <a href="#inicio">Início</a>
-      <a href="#sobre">A produtora</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato" class="nav-cta">Vamos conversar ↗</a>
-    </nav>
-  </header>
-
-  <main>
-    <!-- CAPA -->
-    <section class="hero" id="inicio">
-      <img
-        class="hero-image"
-        src="./images/WhatsApp%20Image%202026-09-08%20at%2016.16.55.jpeg"
-        alt="Registro fotográfico de casamento"
-        fetchpriority="high"
-      >
-      <div class="hero-overlay"></div>
-
-      <div class="hero-content">
-        <p class="eyebrow"><span class="status-dot"></span> PRODUÇÃO AUDIOVISUAL · BRASIL</p>
-
-        <h1>
-          Criamos histórias
-          <span>que merecem</span>
-          <span class="outline-text">ser vistas.</span>
-        </h1>
-
-        <p class="hero-description">
-          Transformamos momentos, ideias e marcas em experiências
-          audiovisuais que despertam emoções e deixam sua marca.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#portfolio" class="button button-light">Explorar projetos <span>↗</span></a>
-          <a href="#contato" class="button button-outline">Iniciar um projeto</a>
-        </div>
-      </div>
-
-      <div class="hero-bottom">
-        <span>FILMES · FOTOGRAFIA · EVENTOS</span>
-        <a href="#sobre">DESCUBRA A SEVEN <span>↓</span></a>
-        <span class="hero-index">01 / 04</span>
-      </div>
-    </section>
-
-    <!-- SOBRE -->
-    <section class="section about" id="sobre">
-      <div class="section-label">
-        <span>01</span>
-        <span>QUEM SOMOS</span>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-heading">
-          <p class="eyebrow">IMAGENS COM PROPÓSITO</p>
-          <h2>Mais do que imagens. <span>Histórias com identidade.</span></h2>
-        </div>
-
-        <div class="about-copy">
-          <p>
-            Na Seven7Studios, cada projeto é uma oportunidade de transformar
-            uma ideia em algo que as pessoas possam sentir, lembrar e compartilhar.
-          </p>
-          <p>
-            Trabalhamos com fotografia e produção audiovisual para casamentos,
-            eventos e marcas, unindo criatividade, direção e edição para contar
-            cada história do seu jeito.
-          </p>
-          <a href="#servicos" class="text-link">Conheça nossos serviços <span>↗</span></a>
-        </div>
-      </div>
-
-      <div class="about-banner">
-        <img
-          src="./images/IMG_7176.jpg"
-          alt="Registro fotográfico da Seven7Studios"
-          loading="lazy"
-        >
-        <div class="banner-caption">
-          <span>VISÃO CRIATIVA. EXECUÇÃO PRECISA.</span>
-          <span>SEVEN7STUDIOS®</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFÓLIO -->
-    <section class="section portfolio" id="portfolio">
-      <div class="section-label">
-        <span>02</span>
-        <span>TRABALHOS SELECIONADOS</span>
-      </div>
-
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">NOSSO UNIVERSO</p>
-          <h2>Projetos em <span>movimento.</span></h2>
-        </div>
-        <p>Cada projeto tem uma história. Estas são algumas das formas de contar a sua.</p>
-      </div>
-
-      <!-- ABAS -->
-      <div class="portfolio-tabs" role="group" aria-label="Tipo de portfólio">
-        <button class="portfolio-tab active" type="button" data-tab="fotografias" aria-pressed="true">
-          Fotografias
-        </button>
-        <button class="portfolio-tab" type="button" data-tab="videos" aria-pressed="false">
-          Vídeos
-        </button>
-      </div>
-
-      <!-- FILTROS DE FOTOGRAFIA -->
-      <div class="filters" role="group" aria-label="Filtrar fotografias" data-filters>
-        <button class="filter active" type="button" data-filter="todos">Todas</button>
-        <button class="filter" type="button" data-filter="casamentos">Casamentos</button>
-        <button class="filter" type="button" data-filter="eventos">Eventos</button>
-      </div>
-
-      <!-- FOTOGRAFIAS -->
-      <div class="project-grid portfolio-content" data-content="fotografias">
-
-        <article class="project-card project-large" data-category="casamentos">
-          <a href="./images/WhatsApp%20Image%202026-09-08%20at%2016.16.55.jpeg" class="project-image" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./images/WhatsApp%20Image%202026-09-08%20at%2016.16.55.jpeg"
-              alt="Fotografia de casamento"
-              loading="lazy"
-            >
-            <span class="project-arrow">↗</span>
-          </a>
-          <div class="project-info">
-            <div>
-              <span class="project-category">CASAMENTOS</span>
-              <h3>Histórias para a vida inteira</h3>
-            </div>
-            <span class="project-number">01</span>
-          </div>
-        </article>
-
-        <article class="project-card" data-category="casamentos">
-          <a href="./images/WhatsApp%20Image%202026-09-08%20at%2016.16.55%20(2).jpeg" class="project-image" target="_blank" rel="noopener noreferrer">
-            <img
-              src="C:\Users\DELL\Desktop\SEVEN7\images\WhatsApp Image 2026-09-08 at 16.16.54.jpeg"
-              alt="Outro registro de casamento"
-              loading="lazy"
-            >
-            <span class="project-arrow">↗</span>
-          </a>
-          <div class="project-info">
-            <div>
-              <span class="project-category">CASAMENTOS</span>
-              <h3>Detalhes que ficam</h3>
-            </div>
-            <span class="project-number">02</span>
-          </div>
-        </article>
-
-        <article class="project-card" data-category="casamentos">
-          <a href="./images/IMG_7176.jpg" class="project-image" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./images/IMG_7176.jpg"
-              alt="Fotografia de casamento"
-              loading="lazy"
-            >
-            <span class="project-arrow">↗</span>
-          </a>
-          <div class="project-info">
-            <div>
-              <span class="project-category">CASAMENTOS</span>
-              <h3>Momentos únicos</h3>
-            </div>
-            <span class="project-number">03</span>
-          </div>
-        </article>
-
-        <article class="project-card" data-category="eventos">
-          <a href="./images/IMG_0918%20(2)%20(1).jpg" class="project-image" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./images/IMG_0918%20(2)%20(1).jpg"
-              alt="Fotografia de evento"
-              loading="lazy"
-            >
-            <span class="project-arrow">↗</span>
-          </a>
-          <div class="project-info">
-            <div>
-              <span class="project-category">EVENTOS</span>
-              <h3>Energia em cada frame</h3>
-            </div>
-            <span class="project-number">04</span>
-          </div>
-        </article>
-
-      </div>
-
-      <!-- VÍDEOS -->
-      <div class="video-grid portfolio-content" data-content="videos" hidden>
-        <article class="video-card">
-          <div class="video-frame">
-            <video controls playsinline preload="metadata">
-              <source
-                src="./images/WhatsApp%20Video%202026-09-08%20at%2016.54.53%20(1).mp4"
-                type="video/mp4"
-              >
-              Seu navegador não consegue reproduzir este vídeo.
-            </video>
-          </div>
-          <div class="project-info">
-            <div>
-              <span class="project-category">PRODUÇÃO AUDIOVISUAL</span>
-              <h3>Histórias em movimento</h3>
-            </div>
-            <span class="project-number">01</span>
-          </div>
-        </article>
-      </div>
-
-      <p class="portfolio-note">
-        Cada imagem e vídeo representa um pouco do nosso olhar criativo.
-      </p>
-    </section>
-
-    <!-- SERVIÇOS -->
-    <section class="section services" id="servicos">
-      <div class="section-label">
-        <span>03</span>
-        <span>O QUE FAZEMOS</span>
-      </div>
-
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">IDEIAS QUE GANHAM VIDA</p>
-          <h2>Da ideia à <span>tela.</span></h2>
-        </div>
-        <p>Soluções criativas pensadas para cada momento, público e objetivo.</p>
-      </div>
-
-      <div class="service-list">
-        <a href="#contato" class="service-item">
-          <span class="service-number">01</span>
-          <div class="service-main">
-            <h3>Fotografia e filmes de casamento</h3>
-            <p>Emoção, detalhes e momentos que merecem ser revividos.</p>
-          </div>
-          <span class="service-arrow">↗</span>
-        </a>
-
-        <a href="#contato" class="service-item">
-          <span class="service-number">02</span>
-          <div class="service-main">
-            <h3>Cobertura de eventos</h3>
-            <p>Registros de experiências, celebrações e encontros.</p>
-          </div>
-          <span class="service-arrow">↗</span>
-        </a>
-
-        <a href="#contato" class="service-item">
-          <span class="service-number">03</span>
-          <div class="service-main">
-            <h3>Vídeos comerciais</h3>
-            <p>Conteúdo audiovisual para apresentar marcas, produtos e serviços.</p>
-          </div>
-          <span class="service-arrow">↗</span>
-        </a>
-
-        <a href="#contato" class="service-item">
-          <span class="service-number">04</span>
-          <div class="service-main">
-            <h3>Produção para redes sociais</h3>
-            <p>Vídeos planejados para comunicar e valorizar seu conteúdo.</p>
-          </div>
-          <span class="service-arrow">↗</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- CHAMADA -->
-    <section class="manifesto">
-      <div class="manifesto-image"></div>
-      <div class="manifesto-overlay"></div>
-      <div class="manifesto-content">
-        <p class="eyebrow">SUA HISTÓRIA É O PRÓXIMO PROJETO</p>
-        <h2>Vamos criar algo <span>extraordinário?</span></h2>
-        <a href="#contato" class="button button-light">Conte sua ideia <span>↗</span></a>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section class="section contact" id="contato">
-      <div class="section-label">
-        <span>04</span>
-        <span>FALE COM A GENTE</span>
-      </div>
-
-      <div class="contact-grid">
-        <div>
-          <p class="eyebrow">VAMOS TIRAR SUA IDEIA DO PAPEL</p>
-          <h2>Todo grande projeto começa com uma <span>conversa.</span></h2>
-          <p class="contact-description">
-            Conte um pouco sobre o seu projeto e vamos conversar sobre como
-            transformar sua ideia em realidade.
-          </p>
-          <a
-            class="button button-light"
-            href="https://wa.me/5511939505901?text=Ol%C3%A1!%20Conheci%20a%20Seven7Studios%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20voc%C3%AAs."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Conversar pelo WhatsApp <span>↗</span>
-          </a>
-        </div>
-
-        <div class="contact-details">
-          <div class="contact-row">
-            <span>CONTATO</span>
-            <a href="https://wa.me/5511939505901" target="_blank" rel="noopener noreferrer">
-              (11) 93950-5901 ↗
-            </a>
-          </div>
-          <div class="contact-row">
-            <span>INSTAGRAM</span>
-            <a href="https://www.instagram.com/seven7studios_/" target="_blank" rel="noopener noreferrer">
-              Conheça nosso perfil ↗
-            </a>
-          </div>
-          <div class="contact-row">
-            <span>PROJETOS</span>
-            <p>Fotografia · Casamentos · Eventos · Vídeos</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <a href="#inicio" class="logo footer-logo">
-      SEVEN<span>7</span>STUDIOS
-      <small>PRODUÇÃO AUDIOVISUAL</small>
-    </a>
-
-    <p>Histórias em movimento. Ideias que ficam.</p>
-    <a href="#topo" class="back-top">VOLTAR AO TOPO ↑</a>
-
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Seven7Studios. Todos os direitos reservados.</span>
-      <span>CRIATIVIDADE EM CADA FRAME.</span>
-    </div>
-  </footer>
-</body>
-</html>
+<header class="topbar"><div class="wrap nav-wrap">
+<a class="brand" href="#inicio">SEVEN<b>7</b>STUDIOS<small>DESENVOLVIMENTO DIGITAL</small></a>
+<button class="menu" aria-label="Abrir menu" aria-expanded="false">MENU</button>
+<nav class="nav" aria-label="Navegação principal"><a href="#projetos">Projetos</a><a href="#processo">Experiência</a><a href="#tecnologias">Tecnologias</a><a href="#sobre">Sobre</a><a class="nav-contact" href="#contato">Contato ↗</a></nav>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-content">
+<p class="eyebrow">PORTFÓLIO · WEB & SOFTWARE</p>
+<h1>Ideias que viram<br><span>soluções digitais.</span></h1>
+<p class="hero-copy">A Seven7Studios desenvolve experiências web e sistemas pensados para resolver problemas reais. Do primeiro layout à lógica por trás da tela, cada projeto nasce com um objetivo: tornar processos mais simples, marcas mais fortes e negócios mais eficientes.</p>
+<div class="actions"><a class="btn primary" href="#projetos">Explorar projetos ↘</a><a class="btn secondary" href="#sobre">Conhecer a Seven7Studios</a><button class="btn secondary" id="print-cv" type="button">Imprimir apresentação / CV ↗</button></div>
+<div class="hero-meta"><span>DESIGN & EXPERIÊNCIA</span><span>DESENVOLVIMENTO WEB</span><span>SISTEMAS & INTEGRAÇÕES</span></div>
+</div></section>
+<div class="wrap stats"><div class="stat"><strong>03</strong><span>frentes de produto apresentadas</span></div><div class="stat"><strong>End-to-end</strong><span>da concepção à implementação</span></div><div class="stat"><strong>Web</strong><span>sites, painéis e sistemas digitais</span></div></div>
+<section class="section" id="projetos"><div class="wrap">
+<div class="section-kicker"><span>01 / PORTFÓLIO</span><span>PROJETOS SELECIONADOS</span></div>
+<div class="section-head"><div><p class="eyebrow">TRABALHOS & SOLUÇÕES</p><h2>Projetos com <em>propósito.</em></h2></div><p class="section-intro">Cada projeto parte de uma necessidade específica. Aqui você encontra o contexto, a solução construída e os principais recursos de cada entrega.</p></div>
+<div class="projects">
+<article class="project"><div class="project-visual visual-ninja"><span class="project-label">01 — WEBSITE INSTITUCIONAL</span><div class="browser"><div class="browser-top"><i></i><i></i><i></i></div><div class="mock"><div class="mock-brand">NINJA LUXE</div><div class="mock-hero">ESTILO. PRECISÃO.<br>IDENTIDADE.</div><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-cards"><i></i><i></i><i></i></div></div></div></div>
+<div class="project-body"><div class="project-top"><div><span class="project-type">Experiência digital · Barbearia</span><h3>Ninja Luxe</h3></div><span class="number">01</span></div><p>Website desenvolvido para apresentar a barbearia, fortalecer sua presença digital e facilitar o acesso dos clientes às informações e aos canais de atendimento.</p><div class="tags"><span class="tag">Website responsivo</span><span class="tag">UI/UX</span><span class="tag">Integrações</span><span class="tag">Deploy</span></div><div class="actions"><a class="project-link" href="https://ninjalux-wfci.onrender.com/" target="_blank" rel="noopener">Visitar projeto ↗</a><button class="project-link" data-open="ninja-detail">Ver estudo de caso +</button></div></div></article>
+<article class="project"><div class="project-visual visual-caixa"><span class="project-label">02 — SISTEMA DE GESTÃO</span><div class="browser"><div class="browser-top"><i></i><i></i><i></i></div><div class="mock"><div class="mock-brand">CAIXA IZAIAS</div><div class="mock-hero">GESTÃO<br>EM UM SÓ LUGAR.</div><div class="mock-cards"><i></i><i></i><i></i></div><div class="mock-line"></div><div class="mock-line short"></div></div></div></div>
+<div class="project-body"><div class="project-top"><div><span class="project-type">Sistema web · Gestão financeira</span><h3>Caixa Izaias</h3></div><span class="number">02</span></div><p>Sistema de gestão para centralizar a operação de um lava-rápido e de um bar, reunindo vendas, despesas, pagamentos, pendências e relatórios em uma única aplicação.</p><div class="tags"><span class="tag">JavaScript</span><span class="tag">Supabase</span><span class="tag">Autenticação</span><span class="tag">Relatórios</span><span class="tag">Offline-first</span></div><div class="actions"><a class="project-link" href="https://caixa-izaias-ultima-atualiza-o-d2qs.vercel.app/" target="_blank" rel="noopener">Abrir sistema ↗</a><button class="project-link" data-open="caixa-detail">Ver estudo de caso +</button></div></div></article>
+<article class="project"><div class="project-visual visual-team"><span class="project-label">03 — PAINÉIS OPERACIONAIS</span><div class="browser"><div class="browser-top"><i></i><i></i><i></i></div><div class="mock"><div class="mock-brand">IZAIAS · EQUIPE</div><div class="mock-hero">PESSOAS E<br>PROCESSOS.</div><div class="mock-cards"><i></i><i></i><i></i></div><div class="mock-line"></div><div class="mock-line short"></div></div></div></div>
+<div class="project-body"><div class="project-top"><div><span class="project-type">Módulo do Caixa Izaias · Operação</span><h3>Gestão de equipe</h3></div><span class="number">03</span></div><p>Conjunto de painéis com permissões distintas para proprietário e funcionários, organizando o acesso às rotinas operacionais e o acompanhamento das atividades.</p><div class="tags"><span class="tag">Painel administrativo</span><span class="tag">Controle de acesso</span><span class="tag">Supabase</span><span class="tag">Regras de horário</span></div><div class="actions"><button class="project-link" data-open="team-detail">Ver estudo de caso +</button><a class="project-link" href="https://github.com/igorlincon392/FUNCIONARIOS-ATUALIZADO" target="_blank" rel="noopener">Repositório ↗</a></div></div></article>
+<article class="project"><div class="project-visual visual-team"><span class="project-label">04 — CENTRAL ADMINISTRATIVA</span><div class="browser"><div class="browser-top"><i></i><i></i><i></i></div><div class="mock"><div class="mock-brand">CENTRAL DO PROPRIETÁRIO</div><div class="mock-hero">VISÃO GERAL<br>DO NEGÓCIO.</div><div class="mock-cards"><i></i><i></i><i></i></div><div class="mock-line"></div><div class="mock-line short"></div></div></div></div>
+<div class="project-body"><div class="project-top"><div><span class="project-type">Painel web · Administração</span><h3>Central do proprietário</h3></div><span class="number">04</span></div><p>Painel administrativo conectado ao ecossistema Caixa Izaias. Permite gerenciar funcionários, permissões, solicitações pendentes e acessar as funções completas do sistema.</p><div class="tags"><span class="tag">HTML / CSS / JS</span><span class="tag">Supabase Auth</span><span class="tag">Gestão de usuários</span></div><div class="actions"><a class="project-link" href="https://github.com/igorlincon392/proprietario" target="_blank" rel="noopener">Ver código ↗</a><button class="project-link" data-open="owner-detail">Ver estudo de caso +</button></div></div></article>
+</div>
+</div></section>
+<section class="section" id="processo"><div class="wrap"><div class="section-kicker"><span>02 / EXPERIÊNCIA</span><span>COMO TRABALHAMOS</span></div><div class="section-head"><div><p class="eyebrow">DO PROBLEMA À ENTREGA</p><h2>Desenvolvimento com <em>visão de produto.</em></h2></div><p class="section-intro">Mais do que escrever código, buscamos entender o contexto de uso e transformar requisitos em ferramentas práticas.</p></div><div class="case-grid"><article class="case"><span class="number">01 — DESCOBERTA</span><h3>Entendimento da necessidade</h3><p>Mapeamento do negócio, dos usuários e dos pontos que precisam ser resolvidos antes de definir a estrutura da solução.</p></article><article class="case"><span class="number">02 — EXPERIÊNCIA</span><h3>Interface e usabilidade</h3><p>Organização de telas, hierarquia visual, navegação e adaptação para diferentes tamanhos de dispositivo.</p></article><article class="case"><span class="number">03 — IMPLEMENTAÇÃO</span><h3>Desenvolvimento e integração</h3><p>Construção da interface, regras de negócio, autenticação e conexão com serviços e banco de dados quando necessário.</p></article><article class="case"><span class="number">04 — EVOLUÇÃO</span><h3>Testes e melhoria contínua</h3><p>Validação de fluxos, correções, refinamento de experiência e preparação para publicação e uso real.</p></article></div></div></section>
+<section class="section" id="tecnologias"><div class="wrap"><div class="section-kicker"><span>03 / STACK</span><span>FERRAMENTAS & COMPETÊNCIAS</span></div><div class="section-head"><div><p class="eyebrow">TECNOLOGIA APLICADA</p><h2>Ferramentas para <em>construir.</em></h2></div><p class="section-intro">Tecnologias presentes nos projetos apresentados e competências aplicadas ao desenvolvimento de soluções web.</p></div><div class="skills"><div class="skill"><strong>HTML5</strong><span>Estrutura semântica</span></div><div class="skill"><strong>CSS3</strong><span>Layout responsivo e UI</span></div><div class="skill"><strong>JavaScript</strong><span>Interações e lógica</span></div><div class="skill"><strong>Supabase</strong><span>Autenticação e banco de dados</span></div><div class="skill"><strong>PostgreSQL</strong><span>Modelagem e dados relacionais</span></div><div class="skill"><strong>Git & GitHub</strong><span>Versionamento de código</span></div><div class="skill"><strong>Vercel</strong><span>Deploy e publicação</span></div><div class="skill"><strong>Render</strong><span>Hospedagem de aplicações</span></div></div></div></section>
+<section class="section" id="sobre"><div class="wrap"><div class="section-kicker"><span>04 / SOBRE</span><span>SEVEN7STUDIOS</span></div><div class="about-grid"><div><p class="eyebrow">TECNOLOGIA, CRIATIVIDADE E INOVAÇÃO</p><h2>Construindo o próximo passo da <em>ideia.</em></h2></div><div class="about-copy"><p>A Seven7Studios é um estúdio criativo e digital que une visão de design e desenvolvimento para criar presença online e ferramentas sob medida.</p><p>O portfólio reúne projetos práticos que exploram desde websites institucionais até sistemas de gestão com autenticação, dados compartilhados e diferentes níveis de acesso.</p><p>O foco é aprender construindo, resolver desafios reais e evoluir cada entrega com atenção à experiência de quem utiliza.</p><div class="profile-card"><div class="initial">S7</div><h3>Seven7Studios</h3><p>Desenvolvimento web · Experiências digitais · Sistemas de gestão</p><a class="project-link" href="https://www.instagram.com/seven7studios_/" target="_blank" rel="noopener">Instagram da Seven7Studios ↗</a></div></div></div></div></section>
+<section class="section" id="contato"><div class="wrap"><div class="contact-panel"><div><p class="eyebrow" style="color:#303820">VAMOS CONSTRUIR ALGO</p><h2>Seu próximo projeto<br>começa aqui.</h2><p>Para oportunidades profissionais, parcerias ou novos projetos, entre em contato com a Seven7Studios.</p></div><a class="btn" href="https://wa.me/5511939505901?text=Ol%C3%A1%2C%20vim%20pelo%20portf%C3%B3lio%20da%20Seven7Studios." target="_blank" rel="noopener">Falar pelo WhatsApp ↗</a></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Seven7Studios. Todos os direitos reservados.</span><span>Tecnologia, criatividade e inovação.</span><a href="#inicio">Voltar ao topo ↑</a><a href="https://github.com/igorlincon392" target="_blank" rel="noopener">GitHub ↗</a></div></footer>
+<dialog id="ninja-detail"><div class="dialog-inner"><button class="dialog-close" data-close>Fechar ×</button><p class="eyebrow">ESTUDO DE CASO · 01</p><h2>Ninja Luxe</h2><h3>Contexto</h3><p>Uma barbearia precisava de uma presença digital que transmitisse sua identidade e reunisse as informações essenciais para quem deseja conhecer o estabelecimento.</p><h3>Solução desenvolvida</h3><p>Website institucional com identidade visual própria, apresentação de serviços, conteúdo visual, navegação por seções e caminhos diretos para contato e localização.</p><h3>Competências demonstradas</h3><ul><li>Estruturação de páginas e hierarquia de conteúdo.</li><li>Design de interface e experiência de navegação.</li><li>Adaptação para dispositivos móveis.</li><li>Publicação e manutenção de aplicação web.</li></ul><div class="dialog-actions"><a class="btn primary" href="https://ninjalux-wfci.onrender.com/" target="_blank" rel="noopener">Visitar website ↗</a></div></div></dialog>
+<dialog id="caixa-detail"><div class="dialog-inner"><button class="dialog-close" data-close>Fechar ×</button><p class="eyebrow">ESTUDO DE CASO · 02</p><h2>Caixa Izaias</h2><h3>Contexto</h3><p>A operação de dois setores — lava-rápido e bar — precisava substituir controles manuais por um sistema organizado e acessível em diferentes dispositivos.</p><h3>Solução desenvolvida</h3><p>Aplicação web com caixas separados por negócio, registro de vendas e despesas, formas de pagamento, pendências, controle de produtos e serviços, mesas/comandas, relatórios e histórico de fechamentos.</p><h3>Arquitetura e recursos</h3><ul><li>Interface web construída com HTML, CSS e JavaScript.</li><li>Supabase para autenticação e sincronização de dados.</li><li>Organização por perfis e permissões de acesso.</li><li>Relatórios financeiros e exportação de dados.</li><li>Estratégia de operação local e sincronização quando conectada, em evolução.</li></ul><p><strong>Desafio principal:</strong> organizar fluxos diferentes em uma única solução, mantendo separação dos caixas e consistência dos registros.</p><div class="dialog-actions"><a class="btn primary" href="https://caixa-izaias-ultima-atualiza-o-d2qs.vercel.app/" target="_blank" rel="noopener">Abrir sistema ↗</a></div></div></dialog>
+<dialog id="team-detail"><div class="dialog-inner"><button class="dialog-close" data-close>Fechar ×</button><p class="eyebrow">ESTUDO DE CASO · 03</p><h2>Gestão de equipe</h2><h3>Contexto</h3><p>O negócio precisava que funcionários registrassem suas atividades sem receber o mesmo nível de acesso administrativo do proprietário.</p><h3>Solução desenvolvida</h3><p>Módulo de equipe integrado ao Caixa Izaias, com entrada por perfil, painel operacional e regras de acesso. O sistema contempla controle de horário, autorização administrativa e validações para operações da equipe.</p><h3>Competências demonstradas</h3><ul><li>Separação de responsabilidades por perfil.</li><li>Fluxos de autenticação e autorização.</li><li>Regras de negócio e validação de operações.</li><li>Integração com dados compartilhados.</li></ul></div></dialog>
+<dialog id="owner-detail"><div class="dialog-inner"><button class="dialog-close" data-close>Fechar ×</button><p class="eyebrow">ESTUDO DE CASO · 04</p><h2>Central do proprietário</h2><h3>Objetivo</h3><p>Oferecer ao responsável pelo negócio uma área dedicada para administrar a equipe e acompanhar itens que exigem validação.</p><h3>Funcionalidades</h3><ul><li>Login de proprietário.</li><li>Gerenciamento de funcionários e setores.</li><li>Controle de permissões e status de acesso.</li><li>Visualização de solicitações e pendências operacionais.</li><li>Acesso ao sistema principal para gestão completa.</li></ul><p>Este painel faz parte do ecossistema Caixa Izaias, compartilhando o contexto de negócio e a autenticação com os módulos operacionais.</p><div class="dialog-actions"><a class="btn primary" href="https://github.com/igorlincon392/proprietario" target="_blank" rel="noopener">Ver repositório ↗</a></div></div></dialog>
+</body></html>
